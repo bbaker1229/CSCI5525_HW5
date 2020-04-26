@@ -156,5 +156,5 @@ for i, data in enumerate(test_loader, 0):
     # noisy = (images + z) / 2.0
     noisy = images + z
 
-imshow(torchvision.utils.make_grid(noisy[0:5], nrow=1))
-imshow(torchvision.utils.make_grid(decode(encode(noisy)).reshape(-1, 1, 28, 28)[0:5], nrow=1))
+imshow(torchvision.utils.make_grid(noisy[0:5], nrow=5))
+imshow(torchvision.utils.make_grid(decode(encode(noisy)).reshape(-1, 1, 28, 28)[0:5], nrow=5))
