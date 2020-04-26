@@ -103,3 +103,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Other
+data/
+*.png
+*.pth
